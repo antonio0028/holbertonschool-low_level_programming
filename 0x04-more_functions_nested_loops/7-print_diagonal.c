@@ -1,18 +1,18 @@
 #include "holberton.h"
 /**
  * print_diagonal - diag and spaces
- *@n: print num of diag lines
+ * @n: print num of diag lines
  */
 void print_diagonal(int n)
 {
-int line;
-int num;
+	int num;
+	int line;
 
-	for (line = 0; line < n; line++)
+	for (num = 0; num < n; num++)
 	{
-		for (num = 0; num <= line; num++)
+		for (line = 0; line <= num; line++)
 		{
-			if (num == line)
+			if (line == num)
 			{
 				_putchar('\\');
 			}
@@ -21,6 +21,9 @@ int num;
 				_putchar(' ');
 			}
 		}
-	_putchar('\n');
+		if (n >= 0)
+		{
+			_putchar('\n');
+		}
 	}
 }
