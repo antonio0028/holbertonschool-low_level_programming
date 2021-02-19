@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
  * _strcat - link 2 strings
- *
- *
+ * @dest: s1
+ * @src: s2
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -14,14 +15,11 @@ char *_strcat(char *dest, char *src)
 	{
 		;
 	}
-	
 	for (num2 = 0; src[num2] != '\0'; num2++)
 	{
 		dest[num1] = src[num2];
 		num1++;
 	}
-	
 	dest[num1] = '\0';
-
 	return (dest);
 }
